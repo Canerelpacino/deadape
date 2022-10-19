@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/*Home*/
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (max-width: 960px) {
+  .home {
+    display: none;
+  }
+}
+
+.mint {
+  position: absolute;
+  display: block;
+  color: white;
+  top: 5vh;
+  left: -0.5vw;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#connectbtn {
+  position: absolute;
+  display: flex;
+  top: 14vh;
+  margin: auto;
+  font-family: 'help', cursive;
+  color: black;
+  cursor: pointer;
+  font-size: 3.5em;
+}
+
+#connectbtn:hover {
+  scale: 0.95;
+}
+
+.soldout {
+  position: absolute;
+  font-family: 'help', cursive;
+  font-size: 3em;
+  margin: auto;
+  left: 43vw;
+  top: 11vh;
+}
+
+.mintbtn {
+  font-family: 'help', cursive;
+  color: white;
+  cursor: pointer;
+  font-size: 4em;
+}
+
+.mintbtn:hover {
+  scale: 0.95;
+}
+
+.round-button{
+  font-size: 5em;
+}
+
+#mint-amount{
+  font-size: 5em;
+}
+
+@media (max-width: 1536px) {
+  #connectbtn {
+    top: 15vh;
+    font-size: 2.8em;
+  }
+  .soldout{
+    font-size: 2.8em;
+  }
+  .round-button{
+    font-size: 2.8em;
+  }
+  #mint-amount{
+    font-size: 2.8em;
+  }
+}
+
+@media (max-width: 1400px) {
+  #connectbtn {
+    top: 15vh;
+    font-size: 2.5em;
+  }
+  .soldout{
+    font-size: 2.5em;
+  }
+  .round-button{
+    font-size: 2.5em;
+  }
+  #mint-amount{
+    font-size: 2.5em;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x17F2fdD7E1Dae1368D1fC80116310F54F40f30a9",
+  "SCAN_LINK": "https://etherscan.io/address/0x17f2fdd7e1dae1368d1fc80116310f54f40f30a9",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "PILLAGERS",
+  "SYMBOL": "PILLAGERS",
+  "MAX_SUPPLY": 3333,
+  "WEI_COST": 0,
+  "DISPLAY_COST": 0.003,
+  "GAS_LIMIT": 120000,
+  "MARKETPLACE": "",
+  "MARKETPLACE_LINK": "",
+  "SHOW_BACKGROUND": true
+}
