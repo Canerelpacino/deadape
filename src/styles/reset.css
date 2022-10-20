@@ -128,6 +128,11 @@ table {
   src: local("/src/styles/help.ttf"), url(help.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "sugar";
+  src: local("/src/styles/sugar.ttf"), url(sugar.ttf) format("truetype");
+}
+
 body {
   margin: 0;
   font-family: "coder", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",

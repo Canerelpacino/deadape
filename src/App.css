@@ -72,6 +72,40 @@
   font-size: 5em;
 }
 
+#twitter:hover {
+  scale: 0.95;
+}
+
+#opensea:hover {
+  scale: 0.95;
+}
+
+#text1 {
+  text-shadow: 1px 1px #350C00;
+  top: 53vw;
+}
+
+#text-1p{
+  font-size: 2em;
+}
+
+#text-2p{
+  font-size: 2em;
+}
+
+#text2 {
+  text-shadow: 1px 1px #350C00;
+  top: 53vw;
+}
+
+#text1:hover {
+  scale: 0.99;
+}
+
+#text2:hover {
+  scale: 0.99;
+}
+
 @media (max-width: 1536px) {
   #connectbtn {
     top: 15vh;
@@ -85,6 +119,18 @@
   }
   #mint-amount{
     font-size: 2.8em;
+  }
+  #text-1p{
+    font-size: 1.5em;
+  }
+  #text1{
+    top: 51.5vw;
+  }
+  #text-2p{
+    font-size: 1.5em;
+  }
+  #text2{
+    top: 54vw;
   }
 }
 
@@ -101,5 +147,17 @@
   }
   #mint-amount{
     font-size: 2.5em;
+  }
+  #text-1p{
+    font-size: 1.3em;
+  }
+  #text1{
+    top: 50vw;
+  }
+  #text-2p{
+    font-size: 1.3em;
+  }
+  #text2{
+    top: 53.5vw;
   }
 }

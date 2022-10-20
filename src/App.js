@@ -121,18 +121,28 @@ function App() {
     document.getElementById("connectbtn").style.display = "none";
   };
 
+  const changeText = () => {
+    document.getElementById("text1").style.display = "none";
+    document.getElementById("text2").style.display = "block";
+  };
+
+  const changeText2 = () => {
+    document.getElementById("text2").style.display = "none";
+    document.getElementById("text1").style.display = "block";
+  };
+
 
   return (
     <div>
       <div className="home">
 
         {/*Socials*/}
-        <div style={{ width: '100%', display: 'flex', flexDirection: 'row-reverse', position: 'absolute' }}>
+        <div style={{ width: '100%', display: 'flex', flexDirection: 'row-reverse', position: 'absolute', zIndex: '1031' }}>
           <a href="https://twitter.com/pillagersnft" target="_blank">
-            <img className="icon" style={{ width: '60px', marginRight: '10px', marginTop: '15px', cursor: 'pointer' }} src="/config/images/twitterp.png"></img>
+            <img id="twitter" className="icon" style={{ width: '80px', marginRight: '10px', marginTop: '15px', cursor: 'pointer', zIndex: '1031' }} src="/config/images/twitterp.png"></img>
           </a>
           <a href="https://opensea.io/collection/pillagers" target="_blank">
-            <img className="icon" style={{ width: '47.5px', marginRight: '8px', marginTop: '20px', cursor: 'pointer' }} src="/config/images/opensea.png"></img>
+            <img id="opensea" className="icon" style={{ width: '73px', marginRight: '1px', marginTop: '16px', cursor: 'pointer', zIndex: '1031' }} src="/config/images/opensea.png"></img>
           </a>
         </div>
 
@@ -149,10 +159,22 @@ function App() {
 
 
 
-        <img src="/config/images/apebg.png" style={{ width: '100%', height: '100%' }}/>
+        <img id="background" src="/config/images/apebg.png" style={{ width: '100%', height: '100%' }}/>
 
 
+        <div id="text1" onClick={changeText} style={{position: 'absolute', width: '51%', lineHeight: '45px', cursor: 'pointer'}}>
+          <p id="text-1p" style={{fontFamily: "'sugar', cursive", color: 'black'}}>Deep in the Otherside lives a cemetery where apes go to lay their final rest. All the most legendary 
+            Bored Apes have been buried here but legend has it they walk the metaverse when the sun goes down. <br></br><br></br>
+            They are not zombies, nor mutants, but the dead ripped of their fur and stripped down to their bones. 
+            They appear dead but they are oh so alive, convening deep in their Dead Ape swamp.......</p>
+        </div>
 
+        <div id="text2" onClick={changeText2} style={{display: 'none', position: 'absolute', width: '51%', lineHeight: '45px', cursor: 'pointer'}}>
+          <p id="text-2p" style={{fontFamily: "'sugar', cursive", color: 'black'}}>The month is October 
+            and the seasons have changed, the wind has chilled, the Dead Apes are thrilled. 
+            Make sure you eat before you are meat because the Dead Apes don't compete.<br></br><br></br>120+ traits created for the 
+            community and lead by the community. Founded by 3 friends, one MAYC holder.</p>
+        </div>
 
 
         {/*Mint Section*/}
@@ -162,7 +184,7 @@ function App() {
               <div
                 className="soldout" style={{ fontFamily: "'help', cursive", color: 'black'}}
               >
-                SOLD OUT!
+                PATIENCEE!
               </div>
               <s.SpacerSmall />
             </>
