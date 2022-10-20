@@ -119,6 +119,7 @@ function App() {
 
   const connected = () => {
     document.getElementById("connectbtn").style.display = "none";
+    document.getElementById("connect-phone").style.display = "none";
   };
 
   const changeText = () => {
@@ -264,6 +265,96 @@ function App() {
 
 
       <Phone>
+      <div id="connect-phone" style={{}}
+          onClick={(e) => {
+            e.preventDefault();
+            dispatch(connect());
+            getData();
+            connected();
+          }}
+        >
+          CONNECT
+        </div>
+
+         {/*Mint Section*/}
+         <div className="mint-phone">
+          {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
+            <>
+              <div
+                className="soldout-phone" style={{ fontFamily: "'help', cursive", color: 'black'}}
+              >
+                PATIENCEE!
+              </div>
+              <s.SpacerSmall />
+            </>
+          ) : (
+            <>
+              <s.SpacerXSmall />
+              <s.SpacerSmall />
+              {blockchain.account === "" ||
+                blockchain.smartContract === null ? (
+                <s.Container ai={"center"} jc={"center"}>
+                  <s.SpacerSmall />
+
+                  {blockchain.errorMsg !== "" ? (
+                    <>
+                      <s.SpacerSmall />
+                    </>
+                  ) : null}
+                </s.Container>
+              ) : (
+                <>
+                  <div onLoad={connected()}></div>
+                  <s.SpacerMedium />
+                  <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                    <btn id="roundbtn" className="round-button"
+                      style={{ fontFamily: "'help', cursive", color: 'black', cursor: 'pointer' }}
+                      disabled={claimingNft ? 1 : 0}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        decrementMintAmount();
+                      }}
+                    >
+                      -
+                    </btn>
+                    <s.SpacerMedium />
+                    <s.TextDescription id="mint-amount"
+                      style={{
+                        textAlign: "center",
+                        color: 'black', fontFamily: "'help', cursive"
+                      }}
+                    >
+                      {mintAmount}
+                    </s.TextDescription>
+                    <s.SpacerMedium />
+                    <btn className="round-button"
+                      style={{ fontFamily: "'help', cursive", color: 'black', cursor: 'pointer' }}
+                      disabled={claimingNft ? 1 : 0}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        incrementMintAmount();
+                      }}
+                    >
+                      +
+                    </btn>
+                  </s.Container>
+                  <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                    <div className="mintbtn" style={{ fontFamily: "'help', cursive", color: 'black', fontSize: '2em', cursor: 'pointer', marginTop: '2px', marginLeft: '8px' }}
+                      disabled={claimingNft ? 1 : 0}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        claimNFTs();
+                        getData();
+                      }}
+                    >
+                      MINT HERE SER
+                    </div>
+                  </s.Container>
+                </>
+              )}
+            </>
+          )}
+        </div>
       </Phone>
     </div>
   );
@@ -277,7 +368,7 @@ justify-self: center;
 align-items: center; 
 height: 100vh;
 minWidth: 100%;
-background-image: url("/config/images/backgr.gif");
+background-image: url("/config/images/apebg.png");
 background-position: 50%; 
 background-repeat: no-repeat;
 background-size: cover; 

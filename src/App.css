@@ -29,6 +29,15 @@
 }
 
 
+.mint-phone {
+  position: absolute;
+  display: block;
+  color: white;
+  top: 100vw;
+  margin: auto;
+}
+
+
 #connectbtn {
   position: absolute;
   display: flex;
@@ -39,6 +48,18 @@
   cursor: pointer;
   font-size: 3.5em;
 }
+
+#connect-phone {
+  position: absolute;
+  display: flex;
+  top: 110vw;
+  margin: auto;
+  font-family: 'help', cursive;
+  color: black;
+  cursor: pointer;
+  font-size: 3.5em;
+}
+
 
 #connectbtn:hover {
   scale: 0.95;
@@ -51,6 +72,16 @@
   margin: auto;
   left: 43vw;
   top: 11vh;
+}
+
+.soldout-phone {
+  display: block;
+  position: relative;
+  font-family: 'help', cursive;
+  top: 20vw;
+  width: 100%;
+  font-size: 3em;
+  margin: auto;
 }
 
 .mintbtn {
