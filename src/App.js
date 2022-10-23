@@ -142,7 +142,7 @@ function App() {
           <a href="https://twitter.com/DeadApe_YC" target="_blank">
             <img id="twitter" className="icon" style={{ width: '80px', marginRight: '10px', marginTop: '15px', cursor: 'pointer', zIndex: '1031' }} src="/config/images/twitterp.png"></img>
           </a>
-          <a href="" target="_blank">
+          <a href="https://opensea.io/collection/dead-ape-yacht-club-nft" target="_blank">
             <img id="opensea" className="icon" style={{ width: '73px', marginRight: '1px', marginTop: '16px', cursor: 'pointer', zIndex: '1031' }} src="/config/images/opensea.png"></img>
           </a>
         </div>
