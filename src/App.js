@@ -185,7 +185,7 @@ function App() {
               <div
                 className="soldout" style={{ fontFamily: "'help', cursive", color: 'black'}}
               >
-                PATIENCEE!
+                SOLD OUT!
               </div>
               <s.SpacerSmall />
             </>
